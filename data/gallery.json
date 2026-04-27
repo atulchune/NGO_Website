@@ -1,0 +1,17 @@
+{
+  "categories": ["All", "Events", "Projects", "Community"],
+  "images": [
+    { "id": 1, "url": "/images/gallery/1.jpg", "category": "Events", "alt": "Annual Gathering 2023" },
+    { "id": 2, "url": "/images/gallery/2.jpg", "category": "Projects", "alt": "Physiotherapy Camp Inauguration" },
+    { "id": 3, "url": "/images/gallery/3.jpg", "category": "Projects", "alt": "School Supply Distribution" },
+    { "id": 4, "url": "/images/gallery/4.jpg", "category": "Community", "alt": "Community Luncheon" },
+    { "id": 5, "url": "/images/gallery/5.jpg", "category": "Community", "alt": "Volunteer Meeting" },
+    { "id": 6, "url": "/images/gallery/6.jpg", "category": "Events", "alt": "Fundraiser Gala" },
+    { "id": 7, "url": "/images/gallery/7.jpg", "category": "Projects", "alt": "Medical Camp" },
+    { "id": 8, "url": "/images/gallery/8.jpg", "category": "Projects", "alt": "Widow Pension Distribution" },
+    { "id": 9, "url": "/images/gallery/9.jpg", "category": "Events", "alt": "Cultural Program" },
+    { "id": 10, "url": "/images/gallery/10.jpg", "category": "Community", "alt": "Youth Workshop" },
+    { "id": 11, "url": "/images/gallery/11.jpg", "category": "Projects", "alt": "Food Drive" },
+    { "id": 12, "url": "/images/gallery/12.jpg", "category": "Events", "alt": "Diwali Celebration" }
+  ]
+}
