@@ -7,6 +7,7 @@ import Footer from "@/components/shared/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://vapipunjabicharitablefoundation.org"),
   title: "Vapi Punjabi Charitable Foundation",
   description: "A non-profit organization dedicated to serving the community through healthcare, education, and financial relief initiatives.",
   openGraph: {

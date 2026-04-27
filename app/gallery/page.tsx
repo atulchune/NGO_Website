@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { PageHero } from "@/components/ui/SectionHeading";
@@ -85,11 +86,13 @@ export default function GalleryPage() {
                   className="aspect-square rounded-xl overflow-hidden cursor-pointer group relative shadow-md"
                   onClick={() => openLightbox(index)}
                 >
-                  <img
+                  <Image
                     src={image.url}
                     alt={image.alt}
+                    fill
                     loading="lazy"
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                    className="object-cover transform group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                     <div>
@@ -187,13 +190,16 @@ export default function GalleryPage() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
-              className="relative max-w-5xl max-h-[85vh] w-full"
+              className="relative max-w-5xl max-h-[85vh] w-full aspect-video"
               onClick={(e) => e.stopPropagation()}
             >
-              <img
+              <Image
                 src={filteredImages[lightboxIndex].url}
                 alt={filteredImages[lightboxIndex].alt}
-                className="w-full h-full object-contain rounded-xl"
+                fill
+                className="object-contain rounded-xl"
+                sizes="100vw"
+                priority
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-xl">
                 <p className="text-white font-bold text-lg">

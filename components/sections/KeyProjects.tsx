@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
@@ -45,10 +46,12 @@ export default function KeyProjects() {
             <motion.div key={project.id} variants={item} className="bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-100 group flex flex-col">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors z-10"></div>
-                <img 
-                  src={project.images[0]} 
-                  alt={project.title} 
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
+                <Image
+                  src={project.images[0]}
+                  alt={project.title}
+                  fill
+                  className="object-cover transform group-hover:scale-110 transition-transform duration-700"
+                  sizes="(max-width: 768px) 100vw, 25vw"
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">

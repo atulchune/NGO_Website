@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
@@ -83,19 +84,23 @@ export default function ProjectsPage() {
                 className={index % 2 !== 0 ? "lg:order-2" : ""}
               >
                 <div className="relative">
-                  <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                    <img
+                  <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl relative">
+                    <Image
                       src={project.images[0]}
                       alt={project.title}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
                   {project.images[1] && (
-                    <div className="absolute -bottom-6 -right-3 w-1/2 aspect-video rounded-xl overflow-hidden shadow-xl border-4 border-white hidden md:block">
-                      <img
+                    <div className="absolute -bottom-6 -right-3 w-1/2 aspect-video rounded-xl overflow-hidden shadow-xl border-4 border-white hidden md:block relative">
+                      <Image
                         src={project.images[1]}
                         alt={`${project.title} activity`}
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 0vw, 25vw"
                       />
                     </div>
                   )}
@@ -199,7 +204,7 @@ export default function ProjectsPage() {
                 <p className="text-slate-600 text-lg leading-relaxed mb-6">
                   Whether you have medical expertise, teaching skills, or simply
                   a desire to help — we need you. Join our growing volunteer
-                  family and make a tangible difference in someone's life.
+                  family and make a tangible difference in someone&apos;s life.
                 </p>
                 <ul className="space-y-3 mb-8">
                   {[
@@ -226,10 +231,12 @@ export default function ProjectsPage() {
                 </Link>
               </div>
               <div className="relative min-h-[300px]">
-                <img
+                <Image
                   src="/images/gallery/5.jpg"
                   alt="Volunteers at work"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </div>
