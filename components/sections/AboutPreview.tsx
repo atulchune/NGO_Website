@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
@@ -17,10 +18,22 @@ export default function AboutPreview() {
           >
             <div className="relative">
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl relative z-10 w-11/12">
-                <img src="/images/gallery/1.jpg" alt="Foundation event" className="object-cover w-full h-full" />
+                <Image
+                  src="/images/gallery/1.jpg"
+                  alt="Foundation event"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="absolute -bottom-8 -right-4 w-2/3 aspect-square rounded-2xl overflow-hidden shadow-xl border-8 border-background z-20 hidden md:block">
-                <img src="/images/gallery/2.jpg" alt="Foundation work" className="object-cover w-full h-full" />
+                <Image
+                  src="/images/gallery/2.jpg"
+                  alt="Foundation work"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 0vw, 25vw"
+                />
               </div>
               <div className="absolute -top-8 -left-8 w-32 h-32 bg-secondary rounded-full mix-blend-multiply filter blur-2xl opacity-50 z-0"></div>
               <div className="absolute -bottom-12 right-12 w-40 h-40 bg-primary rounded-full mix-blend-multiply filter blur-2xl opacity-40 z-0"></div>
@@ -44,7 +57,7 @@ export default function AboutPreview() {
             <p className="text-slate-600 text-lg mb-6 leading-relaxed">
               Vapi Punjabi Charitable Foundation is a non-profit registered organization focused on uplifting the underprivileged in Vapi and surrounding regions. We believe in providing sustainable solutions in healthcare, education, and immediate community relief.
             </p>
-            
+
             <ul className="space-y-3 mb-8">
               {[
                 "Healthcare & Medical Emergency funds for the poor.",

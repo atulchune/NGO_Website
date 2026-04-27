@@ -155,7 +155,7 @@ export default function ContactPage() {
                   Send Us a Message
                 </h2>
                 <p className="text-slate-500 mb-8">
-                  Fill out the form and we'll get back to you within 24 hours.
+                  Fill out the form and we&apos;ll get back to you within 24 hours.
                 </p>
 
                 {status === "success" && (

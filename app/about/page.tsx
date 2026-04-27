@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { PageHero } from "@/components/ui/SectionHeading";
 import {
@@ -98,11 +99,13 @@ export default function AboutPage() {
               transition={{ duration: 0.7 }}
             >
               <div className="relative">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                  <img
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl relative">
+                  <Image
                     src="/images/gallery/3.jpg"
                     alt="Foundation activities"
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-secondary rounded-2xl p-6 shadow-xl text-white">

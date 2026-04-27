@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, HeartPulse } from "lucide-react";
+import { HeartPulse } from "lucide-react";
 
 export default function Hero() {
   return (
