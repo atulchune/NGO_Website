@@ -3,6 +3,7 @@ services:
   - type: web
     name: ngo-web
     env: node
+    plan: free
     buildCommand: npm install && npx turbo run build --filter=web
     startCommand: cd apps/web && npm run start
     envVars:
@@ -13,6 +14,7 @@ services:
   - type: web
     name: ngo-admin
     env: node
+    plan: free
     buildCommand: npm install && npx turbo run build --filter=admin
     startCommand: cd apps/admin && npm run start
     envVars:
