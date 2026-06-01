@@ -4,7 +4,7 @@ services:
     name: ngo-web
     env: node
     plan: free
-    buildCommand: npm install && npx turbo run build --filter=web
+    buildCommand: npm install --include=dev && npx turbo run build --filter=web
     startCommand: cd apps/web && npm run start
     envVars:
       - key: NODE_ENV
@@ -15,7 +15,7 @@ services:
     name: ngo-admin
     env: node
     plan: free
-    buildCommand: npm install && npx turbo run build --filter=admin
+    buildCommand: npm install --include=dev && npx turbo run build --filter=admin
     startCommand: cd apps/admin && npm run start
     envVars:
       - key: NODE_ENV
