@@ -1,0 +1,44 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          light: '#1D4ED8',
+          DEFAULT: '#0B1F52', // Navy
+          dark: '#061338'
+        },
+        secondary: {
+          light: '#3B82F6',
+          DEFAULT: '#1D4ED8', // Royal Blue
+          dark: '#1E3A8A'
+        },
+        accent: {
+          DEFAULT: '#D4AF37', // Gold
+          light: '#E6C657',
+        },
+        background: '#FAF8F3', // Cream
+        surface: '#FFFFFF',
+        muted: '#F5F6F8', // Soft Gray
+        text: {
+          main: '#0B1F52', // Navy for standard text
+          muted: '#64748B'
+        }
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-gradient": "linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%)",
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;

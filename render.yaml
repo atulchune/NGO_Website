@@ -1,0 +1,20 @@
+services:
+  # Main Web Frontend
+  - type: web
+    name: ngo-web
+    env: node
+    buildCommand: npm install && npx turbo run build --filter=web
+    startCommand: cd apps/web && npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+  # Admin Frontend
+  - type: web
+    name: ngo-admin
+    env: node
+    buildCommand: npm install && npx turbo run build --filter=admin
+    startCommand: cd apps/admin && npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production

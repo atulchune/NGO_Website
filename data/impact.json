@@ -1,6 +1,0 @@
-[
-  { "id": "lives", "label": "Lives Impacted", "value": 15000, "suffix": "+" },
-  { "id": "projects", "label": "Active Projects", "value": 12, "suffix": "" },
-  { "id": "volunteers", "label": "Volunteers", "value": 250, "suffix": "+" },
-  { "id": "cities", "label": "Cities Reached", "value": 4, "suffix": "" }
-]

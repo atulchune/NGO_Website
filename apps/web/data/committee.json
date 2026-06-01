@@ -1,0 +1,25 @@
+[
+  {
+    "group": "Trustees",
+    "members": [
+      { "name": "Mr. Ranjit Singh", "role": "Managing Trustee", "photo": "/images/committee/ranjit.jpg" },
+      { "name": "Mrs. Kuldeep Kaur", "role": "Trustee", "photo": "/images/committee/kuldeep.jpg" }
+    ]
+  },
+  {
+    "group": "Committee",
+    "members": [
+      { "name": "Dr. Harpreet Bhullar", "role": "President", "photo": "/images/committee/harpreet.jpg" },
+      { "name": "Mr. Amrik Singh", "role": "Vice President", "photo": "/images/committee/amrik.jpg" },
+      { "name": "Mr. Sukhdev Sandhu", "role": "Treasurer", "photo": "/images/committee/sukhdev.jpg" },
+      { "name": "Mrs. Baljit Kaur", "role": "Secretary", "photo": "/images/committee/baljit.jpg" }
+    ]
+  },
+  {
+    "group": "Operations",
+    "members": [
+      { "name": "Mr. Gurmeet Singh", "role": "Project Coordinator", "photo": "/images/committee/gurmeet.jpg" },
+      { "name": "Ms. Paramjit", "role": "Volunteer Lead", "photo": "/images/committee/paramjit.jpg" }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "physiotherapy",
+    "title": "Free Physiotherapy Camp",
+    "shortDescription": "Offering regular physiotherapy services for the elderly and those recovering from injuries, free of charge to promote mobility and health.",
+    "description": "Our Free Physiotherapy Camp is dedicated to helping individuals regain mobility and manage pain without the burden of medical expenses. We host certified physiotherapists who volunteer their time to treat chronic pain, post-surgical rehabilitation, and age-related mobility issues.",
+    "images": ["https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1000", "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1000"],
+    "stats": {
+      "beneficiaries": "500+",
+      "campsConducted": "24",
+      "volunteers": "15"
+    }
+  },
+  {
+    "id": "widow-pension",
+    "title": "Widow Pension Scheme",
+    "shortDescription": "Providing financial assistance to widows to help them meet their daily needs and sustain an independent lifestyle.",
+    "description": "The Widow Pension Scheme provides a monthly financial stipend to low-income widows within our community. This initiative aims to provide financial dignity and security to women who have lost their primary breadwinners.",
+    "images": ["https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&q=80&w=1000", "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1000"],
+    "stats": {
+      "beneficiaries": "120 Families",
+      "monthlyAid": "₹2000/month",
+      "yearsActive": "5"
+    }
+  },
+  {
+    "id": "education",
+    "title": "Education for Girls",
+    "shortDescription": "Supporting the education of underprivileged girls by sponsoring their school fees, books, and uniforms.",
+    "description": "We believe education is the most powerful tool for social change. Our foundation sponsors the education of girls from marginalized families. This covers tuition, uniforms, stationaries, and tutoring support to ensure they can dream big and achieve more.",
+    "images": ["https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=1000", "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&q=80&w=1000"],
+    "stats": {
+      "studentsSponsored": "350",
+      "schoolsPartnered": "8",
+      "graduationRate": "95%"
+    }
+  },
+  {
+    "id": "medical-emergency",
+    "title": "Medical Emergency Fund",
+    "shortDescription": "Providing prompt monetary aid to individuals requiring urgent surgeries or critical healthcare interventions.",
+    "description": "A medical emergency can push a family into profound debt. Our Medical Emergency Fund works closely with local hospitals to identify and financially support critical care patients, covering life-saving surgeries and chronic treatments.",
+    "images": ["https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1000", "https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&q=80&w=1000"],
+    "stats": {
+      "fundsDisbursed": "₹15 Lakh+",
+      "livesSaved": "85",
+      "hospitalPartners": "3"
+    }
+  }
+]
