@@ -27,15 +27,13 @@ export function SectionHeading({
     >
       {badge && (
         <div
-          className={`flex items-center gap-2 mb-4 ${
-            center ? "justify-center" : ""
-          }`}
+          className={`flex items-center gap-2 mb-4 ${center ? "justify-center" : ""
+            }`}
         >
           <div className="w-12 h-1 bg-secondary rounded"></div>
           <h3
-            className={`${
-              light ? "text-orange-300" : "text-secondary"
-            } font-bold text-sm tracking-wider uppercase`}
+            className={`${light ? "text-orange-300" : "text-secondary"
+              } font-bold text-sm tracking-wider uppercase`}
           >
             {badge}
           </h3>
@@ -43,17 +41,15 @@ export function SectionHeading({
         </div>
       )}
       <h2
-        className={`text-3xl md:text-5xl font-extrabold ${
-          light ? "text-white" : "text-slate-800"
-        } mb-4`}
+        className={`text-3xl md:text-5xl font-extrabold ${light ? "text-white" : "text-slate-800"
+          } mb-4`}
       >
         {title}
       </h2>
       {subtitle && (
         <p
-          className={`${
-            light ? "text-slate-300" : "text-slate-600"
-          } text-lg max-w-2xl ${center ? "mx-auto" : ""}`}
+          className={`${light ? "text-slate-300" : "text-slate-600"
+            } text-lg max-w-2xl ${center ? "mx-auto" : ""}`}
         >
           {subtitle}
         </p>
@@ -70,7 +66,7 @@ interface PageHeroProps {
 
 export function PageHero({ title, subtitle, backgroundImage }: PageHeroProps) {
   return (
-    <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-primary">
+    <section className="relative pt-24 pb-10 md:pt-8 md:pb-8 overflow-hidden bg-primary">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-primary/90 mix-blend-multiply z-10" />

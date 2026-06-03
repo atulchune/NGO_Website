@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { PageHero } from "@/components/ui/SectionHeading";
+import ImpactCounters from "@/components/sections/ImpactCounters";
 import {
   Target,
   Eye,
@@ -146,6 +147,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Impact Stats */}
+      <ImpactCounters />
 
       {/* Vision & Mission */}
       <section className="py-10 md:py-12 bg-slate-50">

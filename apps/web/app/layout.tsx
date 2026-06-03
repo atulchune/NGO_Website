@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import AudioNewsBar from "@/components/shared/AudioNewsBar";
+import { MediaProvider } from "@/context/MediaContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,9 +37,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} min-h-screen flex flex-col`}>
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <MediaProvider>
+          <Navbar />
+          <AudioNewsBar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </MediaProvider>
       </body>
     </html>
   );

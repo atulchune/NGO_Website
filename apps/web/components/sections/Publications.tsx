@@ -9,7 +9,7 @@ const publications = [
   { id: 2, title: "Annual Report 2025", author: "VPCF", image: "https://images.unsplash.com/photo-1554774853-719586f82d77?auto=format&fit=crop&q=80&w=400" },
   { id: 3, title: "Gurmat Gian Magazine", author: "Monthly Edition", image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=400" },
   { id: 4, title: "Gurbani Santhiya Guide", author: "Education Wing", image: "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=400" },
-  { id: 5, title: "Health & Seva Journal", author: "Quarterly", image: "https://images.unsplash.com/photo-1506869640319-fea1a2ab8e40?auto=format&fit=crop&q=80&w=400" },
+  { id: 5, title: "Health & Seva Journal", author: "Quarterly", image: "/images/gallery/2.jpg" },
   { id: 6, title: "Youth Activity Book", author: "Foundation Press", image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=400" }
 ];
 

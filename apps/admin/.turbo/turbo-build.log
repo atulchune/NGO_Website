@@ -1,0 +1,209 @@
+
+> admin@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Skipping validation of types
+   Skipping linting
+   Collecting page data ...
+   Generating static pages (0/11) ...
+   Generating static pages (2/11) 
+Admin API Error fetching /api/v1/media?type=VIDEO&limit=50: n [Error]: Dynamic server usage: no-store fetch http://localhost:5000/api/v1/media?type=VIDEO&limit=50 /media
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:10750
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:18364
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at u.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18132)
+    at a.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18666)
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17897
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at b.trace (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17851) {
+  description: 'no-store fetch http://localhost:5000/api/v1/media?type=VIDEO&limit=50 /media',
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Admin API Error fetching /api/v1/media?type=AUDIO&limit=50: n [Error]: Dynamic server usage: no-store fetch http://localhost:5000/api/v1/media?type=AUDIO&limit=50 /media
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:10750
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:18364
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at u.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18132)
+    at a.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18666)
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17897
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at b.trace (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17851) {
+  description: 'no-store fetch http://localhost:5000/api/v1/media?type=AUDIO&limit=50 /media',
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+   Generating static pages (5/11) 
+Admin API Error fetching /api/v1/media?type=VIDEO&limit=50: n [Error]: Dynamic server usage: no-store fetch http://localhost:5000/api/v1/media?type=VIDEO&limit=50 /media
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:10750
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:18364
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at u.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18132)
+    at a.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18666)
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17897
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at b.trace (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17851) {
+  description: 'no-store fetch http://localhost:5000/api/v1/media?type=VIDEO&limit=50 /media',
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Admin API Error fetching /api/v1/media?type=AUDIO&limit=50: n [Error]: Dynamic server usage: no-store fetch http://localhost:5000/api/v1/media?type=AUDIO&limit=50 /media
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:10750
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:18364
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at u.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18132)
+    at a.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18666)
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17897
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at b.trace (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17851) {
+  description: 'no-store fetch http://localhost:5000/api/v1/media?type=AUDIO&limit=50 /media',
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Admin API Error fetching /api/v1/content?type=NEWS&limit=50: n [Error]: Dynamic server usage: no-store fetch http://localhost:5000/api/v1/content?type=NEWS&limit=50 /content
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:10750
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:18364
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at u.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18132)
+    at a.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18666)
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17897
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at b.trace (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17851) {
+  description: 'no-store fetch http://localhost:5000/api/v1/content?type=NEWS&limit=50 /content',
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Admin API Error fetching /api/v1/content?type=BLOG&limit=50: n [Error]: Dynamic server usage: no-store fetch http://localhost:5000/api/v1/content?type=BLOG&limit=50 /content
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:10750
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:18364
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at u.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18132)
+    at a.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18666)
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17897
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at b.trace (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17851) {
+  description: 'no-store fetch http://localhost:5000/api/v1/content?type=BLOG&limit=50 /content',
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Admin API Error fetching /api/v1/content?type=PROJECT&limit=50: n [Error]: Dynamic server usage: no-store fetch http://localhost:5000/api/v1/content?type=PROJECT&limit=50 /content
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:10750
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:18364
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at u.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18132)
+    at a.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18666)
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17897
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at b.trace (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17851) {
+  description: 'no-store fetch http://localhost:5000/api/v1/content?type=PROJECT&limit=50 /content',
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Admin API Error fetching /api/events: n [Error]: Dynamic server usage: no-store fetch http://localhost:5000/api/events /content
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:10750
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:18364
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at u.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18132)
+    at a.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18666)
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17897
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at b.trace (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17851) {
+  description: 'no-store fetch http://localhost:5000/api/events /content',
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Admin API Error fetching /api/v1/content?type=NEWS&limit=50: n [Error]: Dynamic server usage: no-store fetch http://localhost:5000/api/v1/content?type=NEWS&limit=50 /content
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:10750
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:18364
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at u.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18132)
+    at a.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18666)
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17897
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at b.trace (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17851) {
+  description: 'no-store fetch http://localhost:5000/api/v1/content?type=NEWS&limit=50 /content',
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Admin API Error fetching /api/v1/content?type=BLOG&limit=50: n [Error]: Dynamic server usage: no-store fetch http://localhost:5000/api/v1/content?type=BLOG&limit=50 /content
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:10750
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:18364
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at u.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18132)
+    at a.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18666)
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17897
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at b.trace (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17851) {
+  description: 'no-store fetch http://localhost:5000/api/v1/content?type=BLOG&limit=50 /content',
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Admin API Error fetching /api/v1/content?type=PROJECT&limit=50: n [Error]: Dynamic server usage: no-store fetch http://localhost:5000/api/v1/content?type=PROJECT&limit=50 /content
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:10750
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:18364
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at u.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18132)
+    at a.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18666)
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17897
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at b.trace (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17851) {
+  description: 'no-store fetch http://localhost:5000/api/v1/content?type=PROJECT&limit=50 /content',
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Admin API Error fetching /api/events: n [Error]: Dynamic server usage: no-store fetch http://localhost:5000/api/events /content
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:10750
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:18364
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at u.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18132)
+    at a.startActiveSpan (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:18666)
+    at D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17897
+    at a.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:8877)
+    at u.with (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:1:3077)
+    at b.trace (D:\NGO Wbsite\apps\admin\.next\server\chunks\522.js:2:17851) {
+  description: 'no-store fetch http://localhost:5000/api/events /content',
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+   Generating static pages (8/11) 
+ ✓ Generating static pages (11/11)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    846 B          88.2 kB
+├ ○ /_not-found                          873 B          88.2 kB
+├ ○ /builder                             846 B          88.2 kB
+├ ƒ /content                             3.31 kB         110 kB
+├ ○ /content/create                      6.25 kB         141 kB
+├ ƒ /content/edit/[id]                   6.59 kB         142 kB
+├ ƒ /content/view/[id]                   5.26 kB         140 kB
+├ ƒ /media                               3.31 kB         110 kB
+├ ○ /media/create                        6.07 kB         141 kB
+├ ƒ /media/edit/[id]                     6.29 kB         141 kB
+├ ƒ /media/view/[id]                     5.2 kB          140 kB
+└ ○ /membership                          846 B          88.2 kB
++ First Load JS shared by all            87.3 kB
+  ├ chunks/1dd3208c-6f7ebe6eb3d86685.js  53.6 kB
+  ├ chunks/528-886da2a26055fafa.js       31.7 kB
+  └ other shared chunks (total)          1.96 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

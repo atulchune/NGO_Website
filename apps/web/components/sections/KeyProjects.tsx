@@ -3,8 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
-import projectsData from "../../data/projects.json";
 
 export default function KeyProjects() {
   const container = {
@@ -21,6 +21,24 @@ export default function KeyProjects() {
     hidden: { opacity: 0, y: 30 },
     show: { opacity: 1, y: 0, transition: { duration: 0.6 } }
   };
+
+  const [projectsData, setProjectsData] = useState<any[]>([]);
+
+  useEffect(() => {
+    async function fetchProjects() {
+      try {
+        const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+        const res = await fetch(`${API_URL}/api/v1/content?type=PROJECT&limit=4`);
+        const data = await res.json();
+        if (data.success && data.data) {
+          setProjectsData(data.data);
+        }
+      } catch (error) {
+        console.error("Failed to fetch projects:", error);
+      }
+    }
+    fetchProjects();
+  }, []);
 
   return (
     <section id="key-projects" className="py-10 md:py-12 bg-slate-50 relative">
@@ -47,7 +65,7 @@ export default function KeyProjects() {
               <div className="relative aspect-[4/3] overflow-hidden">
                 <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors z-10"></div>
                 <Image
-                  src={project.images[0]}
+                  src={project.image || "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=400"}
                   alt={project.title}
                   fill
                   className="object-cover transform group-hover:scale-110 transition-transform duration-700"
@@ -56,7 +74,7 @@ export default function KeyProjects() {
               </div>
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-primary transition-colors">{project.title}</h3>
-                <p className="text-slate-600 mb-6 text-sm flex-1">{project.shortDescription}</p>
+                <p className="text-slate-600 mb-6 text-sm flex-1 line-clamp-3">{project.content}</p>
                 <Link href={`/projects#${project.id}`} className="inline-flex items-center gap-2 text-secondary font-bold hover:text-primary transition-colors mt-auto">
                   <span>Learn More</span>
                   <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform" />

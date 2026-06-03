@@ -4,14 +4,19 @@ import { motion } from "framer-motion";
 import { Calendar as CalendarIcon, Clock, MapPin, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-const events = [
-  { id: 1, title: "Annual Vaisakhi Celebration & Kirtan Darbar", date: "Apr 14, 2026", month: "APR", day: "14", time: "09:00 AM", venue: "Main Gurdwara", image: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=400" },
-  { id: 2, title: "Mega Blood Donation Camp", date: "May 10, 2026", month: "MAY", day: "10", time: "10:00 AM", venue: "Community Hall", image: "https://images.unsplash.com/photo-1576091160550-2173ff9e5ee5?auto=format&fit=crop&q=80&w=400" },
-  { id: 3, title: "Free Health & Eye Checkup", date: "May 15, 2026", month: "MAY", day: "15", time: "08:00 AM", venue: "GIDC Grounds", image: "https://images.unsplash.com/photo-1514416432279-50fac261c7dd?auto=format&fit=crop&q=80&w=400" },
-  { id: 4, title: "Sunday Youth Gurmat Camp", date: "May 22, 2026", month: "MAY", day: "22", time: "11:00 AM", venue: "Education Wing", image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=400" },
-];
+import { EventItem } from "@/lib/api";
 
-export default function UpcomingEvents() {
+interface UpcomingEventsProps {
+  eventsList: EventItem[];
+}
+
+export default function UpcomingEvents({ eventsList }: UpcomingEventsProps) {
+  const displayEvents = eventsList.length > 0 ? eventsList : [
+    { id: "1", title: "Annual Vaisakhi Celebration & Kirtan Darbar", eventDate: "2026-04-14T09:00:00Z", location: "Main Gurdwara", imageUrl: "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=400" } as any,
+    { id: "2", title: "Mega Blood Donation Camp", eventDate: "2026-05-10T10:00:00Z", location: "Community Hall", imageUrl: "/images/gallery/1.jpg" } as any,
+    { id: "3", title: "Free Health & Eye Checkup", eventDate: "2026-05-15T08:00:00Z", location: "GIDC Grounds", imageUrl: "https://images.unsplash.com/photo-1514416432279-50fac261c7dd?auto=format&fit=crop&q=80&w=400" } as any,
+    { id: "4", title: "Sunday Youth Gurmat Camp", eventDate: "2026-05-22T11:00:00Z", location: "Education Wing", imageUrl: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&q=80&w=400" } as any,
+  ];
   return (
     <section className="py-10 md:py-12 bg-muted">
       <div className="w-full max-w-[1600px] mx-auto px-4 md:px-8">
@@ -27,7 +32,13 @@ export default function UpcomingEvents() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {events.map((event, index) => (
+          {displayEvents.map((event, index) => {
+            const dateObj = new Date(event.eventDate);
+            const month = dateObj.toLocaleString('default', { month: 'short' }).toUpperCase();
+            const day = dateObj.getDate();
+            const time = dateObj.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            
+            return (
             <motion.div
               key={event.id}
               initial={{ opacity: 0, y: 20 }}
@@ -37,13 +48,13 @@ export default function UpcomingEvents() {
               className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 group flex flex-col"
             >
               <div className="relative h-48 overflow-hidden">
-                <img src={event.image} alt={event.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img src={event.imageUrl} alt={event.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10"></div>
                 
                 {/* Date Badge */}
                 <div className="absolute top-3 left-3 bg-white rounded-lg shadow-lg text-center overflow-hidden w-14 z-20 border border-gray-100">
-                  <div className="bg-secondary text-white text-[10px] font-bold py-1 uppercase">{event.month}</div>
-                  <div className="text-lg font-bold text-primary py-1">{event.day}</div>
+                  <div className="bg-secondary text-white text-[10px] font-bold py-1 uppercase">{month}</div>
+                  <div className="text-lg font-bold text-primary py-1">{day}</div>
                 </div>
               </div>
 
@@ -55,16 +66,16 @@ export default function UpcomingEvents() {
                 <div className="space-y-2 mt-auto text-sm text-gray-600 font-medium">
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 text-secondary shrink-0" />
-                    <span className="truncate">{event.time}</span>
+                    <span className="truncate">{time}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-accent shrink-0" />
-                    <span className="truncate">{event.venue}</span>
+                    <span className="truncate">{event.location}</span>
                   </div>
                 </div>
               </div>
             </motion.div>
-          ))}
+          )})}
         </div>
         
         <div className="text-center mt-10 md:hidden">
