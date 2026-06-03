@@ -6,7 +6,7 @@ import { SectionHeading } from "../ui/SectionHeading";
 import UniversalPlayer from "../ui/UniversalPlayer";
 
 export default function LiveKirtan({ liveVideo }: { liveVideo?: any }) {
-  if (!liveVideo) return null;
+  // if (!liveVideo) return null;
 
   return (
     <section className="py-12 bg-slate-50 relative overflow-hidden">
