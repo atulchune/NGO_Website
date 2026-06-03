@@ -35,7 +35,6 @@ export default function FeaturedMedia() {
     }
     fetchMedia();
   }, []);
-  console.log(videoItems, "videoItems")
   return (
     <section className="py-10 md:py-12 bg-white border-t border-gray-100">
       <div className="w-full max-w-[1600px] mx-auto px-4 md:px-8">

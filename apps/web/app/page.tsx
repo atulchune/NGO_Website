@@ -37,7 +37,7 @@ export default async function Home() {
       <LatestUpdates newsItems={newsItems?.data || []} blogItems={blogItems?.data || []} />
       <FeaturedMedia />
       <UpcomingEvents eventsList={eventsList.slice(0, 4)} />
-      <Publications />
+      {/* <Publications /> */}
       <HowYouCanHelp />
       <WhatsAppButton />
 

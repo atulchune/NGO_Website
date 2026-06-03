@@ -36,7 +36,7 @@ const cards = [
 
 export default function HowYouCanHelp() {
   return (
-    <section id="how-you-can-help" className="py-10 md:py-12 bg-background relative overflow-hidden">
+    <section id="how-you-can-help" className="py-10 md:py-12 bg-white relative overflow-hidden">
       <div className="absolute top-0 right-0 w-80 h-80 bg-secondary/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
 
@@ -68,7 +68,7 @@ export default function HowYouCanHelp() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.6, delay: index * 0.15 }}
-                className="group relative bg-white rounded-2xl shadow-lg border border-slate-100 p-8 flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300 overflow-hidden"
+                className="group relative bg-background rounded-2xl shadow-lg border border-slate-100 p-8 flex flex-col items-center text-center hover:shadow-2xl transition-shadow duration-300 overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-5 transition-opacity duration-500" style={{ backgroundImage: `linear-gradient(to bottom right, var(--tw-gradient-stops))` }}></div>
                 <div
